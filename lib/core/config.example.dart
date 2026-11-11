@@ -1,3 +1,4 @@
+// Copy to config.dart and fill in your Supabase values
 // ignore_for_file: constant_identifier_names
 
 const String SUPABASE_URL = 'PASTE_HERE';

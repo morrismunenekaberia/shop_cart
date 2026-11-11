@@ -9,9 +9,9 @@
 - [x] **2 Folders theme config**
   - **Status:** Done
   - **Notes:** Created folder structure with `.gitkeep` placeholders, Material 3 light theme with green seed, `config.dart` with placeholder constants, `PERFORMANCE.md`, and lightweight `main.dart`.
-- [ ] **3 Supabase connection**
-  - **Status:** In progress
-  - **Notes:** Created supabase folder structure (`config.toml`, `migrations/`, `functions/`) and documented GitHub integration settings.
+- [x] **3 Supabase connection**
+  - **Status:** Done
+  - **Notes:** Untracked config.dart and added config.example.dart; initialized Supabase in main(); exposed shared client in supabase_client.dart; added temporary connection test to HomeScreen.
 - [ ] **4 Models**
   - **Status:** Not started
   - **Notes:** Create data models for profiles, products, orders, and order items.
@@ -83,10 +83,10 @@
   - **Notes:** Final documentation review and handover notes.
 
 ## Current task
-Created Supabase folder structure (`supabase/config.toml`, `migrations/`, `functions/`), updated architecture documentation, and configured decision log.
+Connected app to Supabase (secrets isolation, client getter, and connection test widget).
 
 ## Known issues
 None.
 
 ## Next step
-Section 3: Configure Supabase credentials and verify connection.
+Section 4: Create data models for profiles, products, orders, and order items.

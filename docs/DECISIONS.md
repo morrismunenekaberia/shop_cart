@@ -20,3 +20,8 @@
 - **Decision:** The Supabase GitHub integration points at the repository root (`'.'`) with automatic deployment disabled.
 - **Rationale:** The repository root hosts both the Flutter frontend and the `supabase/` directory. Disabling automatic deployments prevents inadvertent or premature production schema migrations and edge function redeployments during mobile client commits, ensuring backend updates are deployed deliberately.
 
+### 6. Secrets Management: Exclusion of `config.dart` from Git
+- **Decision:** `lib/core/config.dart` is added to `.gitignore` and untracked, while `lib/core/config.example.dart` is committed as a template.
+- **Rationale:** Prevents sensitive API keys and project URLs from ever being committed to version control. Each developer creates their local `config.dart` based on the example template.
+
+
