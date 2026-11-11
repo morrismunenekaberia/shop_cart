@@ -10,8 +10,8 @@
   - **Status:** Done
   - **Notes:** Created folder structure with `.gitkeep` placeholders, Material 3 light theme with green seed, `config.dart` with placeholder constants, `PERFORMANCE.md`, and lightweight `main.dart`.
 - [ ] **3 Supabase connection**
-  - **Status:** Not started
-  - **Notes:** Configure client initialization and test connectivity.
+  - **Status:** In progress
+  - **Notes:** Created supabase folder structure (`config.toml`, `migrations/`, `functions/`) and documented GitHub integration settings.
 - [ ] **4 Models**
   - **Status:** Not started
   - **Notes:** Create data models for profiles, products, orders, and order items.
@@ -83,10 +83,10 @@
   - **Notes:** Final documentation review and handover notes.
 
 ## Current task
-Completing documentation setup (AGENTS.md, docs/PROJECT_CONTEXT.md, docs/ARCHITECTURE.md, docs/PROGRESS.md, docs/DECISIONS.md, docs/SETUP.md).
+Created Supabase folder structure (`supabase/config.toml`, `migrations/`, `functions/`), updated architecture documentation, and configured decision log.
 
 ## Known issues
 None.
 
 ## Next step
-Section 3: Setup Supabase connection and client integration.
+Section 3: Configure Supabase credentials and verify connection.

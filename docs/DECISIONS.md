@@ -15,3 +15,8 @@
 ### 4. Build Strategy: Release APK with `--split-per-abi`
 - **Decision:** Build production Android release APKs using `flutter build apk --split-per-abi`.
 - **Rationale:** Generates separate APKs targeted to specific device ABIs (armeabi-v7a, arm64-v8a, x86_64), cutting individual download and install sizes significantly compared to a universal fat APK.
+
+### 5. Supabase GitHub Integration & Deployment Strategy
+- **Decision:** The Supabase GitHub integration points at the repository root (`'.'`) with automatic deployment disabled.
+- **Rationale:** The repository root hosts both the Flutter frontend and the `supabase/` directory. Disabling automatic deployments prevents inadvertent or premature production schema migrations and edge function redeployments during mobile client commits, ensuring backend updates are deployed deliberately.
+

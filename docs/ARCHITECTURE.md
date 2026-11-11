@@ -14,8 +14,12 @@ lib/
 └── widgets/            # Reusable UI components (buttons, product cards, loading skeletons, input fields)
 
 supabase/
+├── config.toml         # Supabase CLI project configuration (project_id = "shop_cart")
+├── migrations/         # Database migrations and schema versioning
 └── functions/          # Deno/TypeScript Edge Functions (M-Pesa STK push trigger and payment confirmation callback)
 ```
+
+The `supabase/` folder at the repository root holds all database migrations and M-Pesa Edge Functions. The Supabase GitHub integration points at the repository root (`'.'`) with automatic deployment turned off. This guarantees database schema migrations and edge function updates are audited and deployed deliberately rather than triggered automatically on every git push.
 
 ## Database Schema & Row Level Security (RLS)
 
